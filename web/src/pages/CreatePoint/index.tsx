@@ -109,7 +109,10 @@ const CreatePoint = () => {
         const [latitude, longitude] = selectedPosition;
         const items = selectedItems;
         const data = {
-                name,email,whatsapp,uf,city,latitude,longitude,items
+                name,
+                email,
+                whatsapp,
+                uf,city,latitude,longitude,items
         }
        await api.post('points',data)
         alert('Ponto de coleta criado!');
@@ -141,7 +144,7 @@ const CreatePoint = () => {
                         </div>
                         <div className="field">
                             <label htmlFor="whatsapp"><FiPhone /> Whatsapp</label>
-                            <input type="text" name="whatsapp" id="whatsapp" onChange={handleInputChange} />
+                            <input type="text" name="whatsapp" id="whatsapp" placeholder="Código do país + ddd" onChange={handleInputChange} />
                         </div>
                     </div>
                 </fieldset>
