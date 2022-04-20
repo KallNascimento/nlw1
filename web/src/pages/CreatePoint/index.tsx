@@ -122,7 +122,7 @@ const CreatePoint = () => {
     return (
         <div id="page-create-point">
             <header>
-                <img src={logo} alt="Meus alunos são fdp" />
+                <img src={logo} alt="Eco Logo" />
                 <Link to="/">
                     <FiArrowLeft /> Voltar para Home
     </Link>
